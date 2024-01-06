@@ -1,6 +1,6 @@
 from email import message
 import os
-from Flask import Flask, render_template, request, send_from_directory
+from flask import Flask, render_template, request, send_from_directory
 from predict import *
 
 app = Flask(__name__) 

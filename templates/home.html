@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+.text_div{
+  text-align: left;
+  padding: 200px 10px 10px 100px;
+
+
+
+}
+.button{
+    align-items: center;
+    background-color: #414780;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: rgb(245, 234, 234);
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 10%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+</style>
+<div style="height: 100vh; box-sizing: border-box; background-image: url(../static/img/malaria.jpg);
+background-size: cover;
+background-repeat: no-repeat; 
+align-items:center; 
+text-align:center;">
+
+    <div class="text_div">
+        <h1 style="line-height: 60px; word-spacing: 5px; font-weight: 700; font-size: 50px; text-align: left;">HELLO!</h1>
+        <h1 style="line-height: 60px; word-spacing: 5px; font-weight: 700; font-size: 50px;">WELCOME TO <br> MALARIA  APPLICATION DETECTOR</h1>
+        <h4>Click below to continue</h4>
+        <a href="{{url_for('upload_image')}}" class="button">CONTINUE</a>
+        
+    </div>
+    
+</div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div style="height: 100vh; box-sizing: border-box; background-image: url(../static/img/ff.jpg);
+background-size: cover;
+background-repeat: no-repeat; 
+align-items:center; 
+text-align: center;">
+
+<div style="width: 90%; margin: auto; text-align: center;">
+    <img src="{{ url_for('send_file', filename=image_file_name)}}" style ="max-width: 500px; max-height: 450px; margin-top: 30px; margin-bottom: 10px">
+    <p style="font-style: italic">{{ image_file_name }}</p>
+
+
+        <h3 style="font-size: 50px;">This is a {{name}} blood with {{accuracy}}% accuracy</h3>
+   
+
+     <a href="/upload">Back to upload</a><br>
+</div>
+<!-- <a href="base.html">Back to home</a> -->
+
+{% endblock %}
